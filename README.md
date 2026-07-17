@@ -19,7 +19,7 @@ an ai-powered workspace that helps judicial professionals navigate case files, r
 - developed a next.js and typescript interface for case dashboards, cited answers, and document-grounded conversations
 - designed around preserving the evidence, context, and human circumstances behind each case
 
-*developed through private repositories within the dpl-software organization.*
+private repositories: [client](https://github.com/DPL-Software/JudicialAssistantClient) · [api](https://github.com/DPL-Software/JudicialAssistantAPI)
 
 ### [thread](https://github.com/sathmil/Thread)
 
