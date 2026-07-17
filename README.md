@@ -1,45 +1,57 @@
-# Hi, I'm Sathmil
+# hi, i'm sathmi
 
-I build product-minded software with a focus on AI interfaces, search, data-backed applications, and polished user experiences.
+i'm a computer science student at stanford building human-centered ai systems that help people make sense of complex information.
 
-## Featured projects
+before i began building software, i was a storyteller. i founded who we are to amplify underrepresented voices, conducted anthropological research, and explored how individual experiences can reveal broader patterns about identity, culture, and resilience. today, i bring that same perspective to technology.
 
-### JudicialAI
+my work sits at the intersection of ai, search, storytelling, and product design. whether i'm working with human narratives, legal documents, or consumer information, i'm interested in the same question:
 
-An AI-powered judicial assistant for legal research, case-file analysis, and grounded drafting workflows.
+**how can technology help us find meaning across overwhelming amounts of information without losing the people and stories behind the data?**
 
-- FastAPI backend with RAG over OCR'd case documents, structured court metadata, and Illinois Compiled Statutes
-- Qdrant hybrid search, Azure OpenAI embeddings/chat, Azure Document Intelligence OCR, MongoDB chat history, and SSE streaming
-- Next.js, TypeScript, Redux Toolkit, Tailwind CSS, and shadcn/ui client for case dashboards and chat workflows
+## featured projects
 
-Project repos: private under the DPL-Software organization
+### judicialai
 
-### Thread
+an ai-powered workspace that helps judicial professionals navigate case files, research legal information, and draft grounded responses more efficiently.
 
-An AI-powered story exploration platform for semantic search, narrative clustering, and insight discovery.
+- built a fastapi backend with rag across ocr-processed case documents, structured court metadata, and illinois statutes
+- implemented qdrant hybrid search, azure openai, azure document intelligence, mongodb chat history, and sse streaming
+- developed a next.js and typescript interface for case dashboards, cited answers, and document-grounded conversations
+- designed around preserving the evidence, context, and human circumstances behind each case
 
-- Next.js, FastAPI, Postgres/pgvector, Celery, and OpenAI-backed workflows
-- Semantic search, story maps, theme discovery, retrieval evaluation, and conversational exploration
-- Designed to degrade gracefully when API-backed features are not configured
+*developed through private repositories within the dpl-software organization.*
 
-Repository: https://github.com/sathmil/Thread
+### [thread](https://github.com/sathmil/Thread)
 
-### Stackd
+an ai-powered platform for discovering connections across thousands of human stories.
 
-A review and discovery app for functional food and supplement products.
+- combines semantic search, narrative clustering, story maps, and conversational exploration
+- surfaces shared themes while preserving each narrative as an individual human experience
+- built with next.js, fastapi, postgres/pgvector, celery, and openai-backed workflows
+- grew from my work with who we are and my interest in understanding what stories can reveal when explored collectively
 
-- React, Vite, Supabase Auth, Postgres, Storage, and Row Level Security
-- Product catalog search, reviews, ranked lists, profiles, and account flows
-- Live app: https://www.getstackd.app/
+### [stackd](https://github.com/sathmil/stackd)
 
-Repository: https://github.com/sathmil/stackd
+a social discovery platform that helps people navigate fragmented information about functional foods, supplements, and wellness products.
 
-## Current focus
+- transforms scattered reviews and product information into structured, personal recommendations
+- includes catalog search, reviews, ranked lists, profiles, and social discovery
+- built with react, vite, supabase auth, postgres, storage, and row level security
 
-- Building useful AI-native product experiences
-- Turning prototypes into production-ready systems
-- Keeping projects documented, testable, and easy to understand
+[explore the live app →](https://www.getstackd.app/)
 
-## Contact
+## the thread connecting my work
 
-GitHub: https://github.com/sathmil
+my projects span different domains, but they are grounded in the same purpose: helping people understand information that is technically available but practically overwhelming.
+
+i'm especially interested in:
+
+- human-centered ai and intelligent interfaces
+- semantic search, retrieval, and recommendation systems
+- computational approaches to stories and human experience
+- technology shaped by anthropology, ethics, and lived context
+- products that translate complex systems into meaningful decisions
+
+## connect
+
+[linkedin](https://www.linkedin.com/in/sathmiliyanage) · [github](https://github.com/sathmil)
