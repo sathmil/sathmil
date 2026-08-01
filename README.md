@@ -1,57 +1,47 @@
 # hi, i'm sathmi
 
-i'm a computer science student at stanford building human-centered ai systems that help people make sense of complex information.
+i'm a computer science student at stanford building systems that help people find meaning in complex, overwhelming information — search engines, recommendation systems, and interfaces grounded in how people actually think and decide.
 
-before i began building software, i was a storyteller. i founded who we are to amplify underrepresented voices, conducted anthropological research, and explored how individual experiences can reveal broader patterns about identity, culture, and resilience. today, i bring that same perspective to technology.
+before i began building software, i was a storyteller. i founded who we are to amplify underrepresented voices, conducted anthropological research, and explored how individual experiences reveal broader patterns about identity, culture, and resilience. today, i bring that same perspective to technology: whether i'm working with product reviews, legal documents, or human narratives, i'm interested in the same question —
 
-my work sits at the intersection of ai, search, storytelling, and product design. whether i'm working with human narratives, legal documents, or consumer information, i'm interested in the same question:
-
-**how can technology help us find meaning across overwhelming amounts of information without losing the people and stories behind the data?**
+**how do you build systems that surface signal from noise without losing the people and stories behind the data?**
 
 ## featured projects
 
-### judicialai
+### [tried & told](https://github.com/sathmil/tried-told)
+a full-text search engine, built from scratch, for discovering first-person product reviews across the web.
 
-an ai-powered workspace that helps judicial professionals navigate case files, research legal information, and draft grounded responses more efficiently.
+- built a disk-backed inverted index from first principles, with delta/varint-compressed postings, positional phrase search, and segment-based garbage collection
+- developed a crash-resumable crawler with write-ahead-log recovery, bloom-filter deduplication, and simhash near-duplicate detection; sourced 835 first-person reviews from 45 sites
+- implemented hybrid retrieval — bm25 fused with an hnsw approximate-nearest-neighbor index over dense embeddings via reciprocal rank fusion — served through a go search api
+- validated with 163 automated tests and a running design log of architectural tradeoffs
 
-- built a fastapi backend with rag across ocr-processed case documents, structured court metadata, and illinois statutes
-- implemented qdrant hybrid search, azure openai, azure document intelligence, mongodb chat history, and sse streaming
-- developed a next.js and typescript interface for case dashboards, cited answers, and document-grounded conversations
-- designed around preserving the evidence, context, and human circumstances behind each case
-
-private repositories: [client](https://github.com/DPL-Software/JudicialAssistantClient) · [api](https://github.com/DPL-Software/JudicialAssistantAPI)
-
-### [thread](https://github.com/sathmil/Thread)
-
-an ai-powered platform for discovering connections across thousands of human stories.
-
-- combines semantic search, narrative clustering, story maps, and conversational exploration
-- surfaces shared themes while preserving each narrative as an individual human experience
-- built with next.js, fastapi, postgres/pgvector, celery, and openai-backed workflows
-- grew from my work with who we are and my interest in understanding what stories can reveal when explored collectively
+no search library — every layer, from storage to ranking, built and reasoned through by hand.
 
 ### [stackd](https://github.com/sathmil/stackd)
+a social discovery platform that turns fragmented, scattered reviews of supplements, functional foods, and wellness products into structured, personal recommendations.
 
-a social discovery platform that helps people navigate fragmented information about functional foods, supplements, and wellness products.
-
-- transforms scattered reviews and product information into structured, personal recommendations
-- includes catalog search, reviews, ranked lists, profiles, and social discovery
-- built with react, vite, supabase auth, postgres, storage, and row level security
+- designed a postgres schema where every product variant — down to individual flavors — is scored independently, with supabase auth and row-level security enforcing per-user access
+- built a multi-dimensional rating system (taste, effectiveness, ingredient quality, value) and a social graph that surfaces friends' ratings first
+- developed catalog search, filtering, and ranked-list discovery with a react/typescript frontend
 
 [explore the live app →](https://www.getstackd.app/)
 
+## other work
+
+- **Veris** (dpl holdings) — an ai-powered workspace helping judicial professionals navigate case files and draft grounded responses, built on fastapi, qdrant hybrid search, azure openai, and a next.js frontend, designed around preserving the context and human circumstances behind each case
+- **who we are** — founder of a storytelling platform amplifying 50+ narratives from contributors across 7+ countries, featured in the sunday times
+
 ## the thread connecting my work
 
-my projects span different domains, but they are grounded in the same purpose: helping people understand information that is technically available but practically overwhelming.
+my projects span different domains, but they're grounded in the same purpose: building the infrastructure — indexes, schemas, ranking, retrieval — that lets people navigate information that's technically available but practically overwhelming.
 
 i'm especially interested in:
-
-- human-centered ai and intelligent interfaces
 - semantic search, retrieval, and recommendation systems
+- human-centered ai and intelligent interfaces
 - computational approaches to stories and human experience
-- technology shaped by anthropology, ethics, and lived context
 - products that translate complex systems into meaningful decisions
 
 ## connect
 
-[linkedin](https://www.linkedin.com/in/sathmiliyanage) · [github](https://github.com/sathmil)
+[linkedin](https://www.linkedin.com/in/sathmiliyanage) · sathmi@stanford.edu
