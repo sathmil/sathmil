@@ -29,7 +29,7 @@ a social discovery platform that turns fragmented, scattered reviews of suppleme
 
 ## other work
 
-- **Veris** (dpl holdings) — an ai-powered workspace helping judicial professionals navigate case files and draft grounded responses, built on fastapi, qdrant hybrid search, azure openai, and a next.js frontend, designed around preserving the context and human circumstances behind each case
+- **veris** (dpl holdings) — an ai-powered workspace helping judicial professionals navigate case files and draft grounded responses, built on fastapi, qdrant hybrid search, azure openai, and a next.js frontend, designed around preserving the context and human circumstances behind each case
 - **who we are** — founder of a storytelling platform amplifying 50+ narratives from contributors across 7+ countries, featured in the sunday times
 
 ## the thread connecting my work
