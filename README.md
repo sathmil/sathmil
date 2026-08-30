@@ -9,6 +9,7 @@ before i began building software, i was a storyteller. i founded who we are to a
 ## featured projects
 
 ### [tried & told](https://github.com/sathmil/tried-told)
+
 a full-text search engine, built from scratch, for discovering first-person product reviews across the web.
 
 - built a disk-backed inverted index from first principles, with delta/varint-compressed postings, positional phrase search, and segment-based garbage collection
@@ -19,6 +20,7 @@ a full-text search engine, built from scratch, for discovering first-person prod
 no search library — every layer, from storage to ranking, built and reasoned through by hand.
 
 ### [stackd](https://github.com/sathmil/stackd)
+
 a social discovery platform that turns fragmented, scattered reviews of supplements, functional foods, and wellness products into structured, personal recommendations.
 
 - designed a postgres schema where every product variant — down to individual flavors — is scored independently, with supabase auth and row-level security enforcing per-user access
@@ -29,6 +31,7 @@ a social discovery platform that turns fragmented, scattered reviews of suppleme
 
 ## other work
 
+- **[somnivore validation](https://github.com/sathmil/somnivore-validation)** (heller laboratory) — validation analysis comparing automated sleep-stage scoring against expert annotation across 2M+ epochs; surfaced a state-dependent accuracy collapse (77% → 19% rem-stage accuracy under the highest apamin dose) masked by a 93.7% aggregate classifier accuracy, using cohen's kappa and per-stage sensitivity/specificity
 - **veris** (dpl holdings) — an ai-powered workspace helping judicial professionals navigate case files and draft grounded responses, built on fastapi, qdrant hybrid search, azure openai, and a next.js frontend, designed around preserving the context and human circumstances behind each case
 - **who we are** — founder of a storytelling platform amplifying 50+ narratives from contributors across 7+ countries, featured in the sunday times
 
@@ -37,6 +40,7 @@ a social discovery platform that turns fragmented, scattered reviews of suppleme
 my projects span different domains, but they're grounded in the same purpose: building the infrastructure — indexes, schemas, ranking, retrieval — that lets people navigate information that's technically available but practically overwhelming.
 
 i'm especially interested in:
+
 - semantic search, retrieval, and recommendation systems
 - human-centered ai and intelligent interfaces
 - computational approaches to stories and human experience
@@ -44,4 +48,4 @@ i'm especially interested in:
 
 ## connect
 
-[linkedin](https://www.linkedin.com/in/sathmiliyanage) · sathmi@stanford.edu
+[linkedin](https://linkedin.com/in/sathmi) · [sathmi@stanford.edu](mailto:sathmi@stanford.edu)
