@@ -1,51 +1,47 @@
-# hi, i'm sathmi
+hi, i'm sathmi 👋
 
-i'm a computer science student at stanford building systems that help people find meaning in complex, overwhelming information — search engines, recommendation systems, and interfaces grounded in how people actually think and decide.
+i'm a computer science student at stanford (information track) who loves building ai-powered products that make complex, overwhelming information feel navigable — search, retrieval, recommendation, and the interfaces people actually use to make decisions.
 
-before i began building software, i was a storyteller. i founded who we are to amplify underrepresented voices, conducted anthropological research, and explored how individual experiences reveal broader patterns about identity, culture, and resilience. today, i bring that same perspective to technology: whether i'm working with product reviews, legal documents, or human narratives, i'm interested in the same question —
+before i wrote software, i was a storyteller. i founded who we are to amplify underrepresented voices and did anthropological research on identity, culture, and resilience. that background still shapes how i build: i care about representation, and about systems that serve the people who usually get overlooked.
 
-**how do you build systems that surface signal from noise without losing the people and stories behind the data?**
+the question i keep coming back to:
+**how do you surface signal from noise without losing the people and stories behind the data?**
 
-## featured projects
+### featured projects
 
-### [tried & told](https://github.com/sathmil/tried-told)
+**[stackd](https://github.com/sathmil/stackd)** · [live app →](https://www.getstackd.app/)
+a social discovery platform that turns scattered reviews of supplements, functional foods, and wellness products into structured, personal recommendations. i built it solo, from zero to one, after one too many minutes standing in the supplement aisle unsure what to buy.
 
-a full-text search engine, built from scratch, for discovering first-person product reviews across the web.
+* designed a postgres schema where every product variant, down to individual flavors, is scored independently, with supabase auth and row-level security for per-user access
+* built a multi-dimensional rating system (taste, effectiveness, ingredient quality, value) and a social graph that surfaces friends' ratings first
+* built an ingredient-analysis pipeline with the openai api to score product variants across brands
+* developed catalog search, filtering, and ranked-list discovery with a react/typescript frontend
 
-- built a disk-backed inverted index from first principles, with delta/varint-compressed postings, positional phrase search, and segment-based garbage collection
-- developed a crash-resumable crawler with write-ahead-log recovery, bloom-filter deduplication, and simhash near-duplicate detection; sourced 835 first-person reviews from 45 sites
-- implemented hybrid retrieval — bm25 fused with an hnsw approximate-nearest-neighbor index over dense embeddings via reciprocal rank fusion — served through a go search api
-- validated with 163 automated tests and a running design log of architectural tradeoffs
+**[tried & told](https://github.com/sathmil/tried-told)** · *in progress*
+a learning project where i'm working through how search engines work under the hood: indexing, ranking, and hybrid retrieval (bm25 + dense embeddings) over first-person product reviews. i'm building it piece by piece to understand the tradeoffs, not just call a library.
 
-no search library — every layer, from storage to ranking, built and reasoned through by hand.
+### other work
 
-### [stackd](https://github.com/sathmil/stackd)
+* **[somnivore validation](https://github.com/sathmil/somnivore-validation)** (heller laboratory): compared automated sleep-stage scoring against expert annotation across 2m+ epochs and found a state-dependent accuracy collapse (77% → 19% rem-stage accuracy at the highest apamin dose) hidden behind a 93.7% aggregate accuracy, using cohen's kappa and per-stage sensitivity/specificity
+* **veris** (dpl holdings): an ai-powered workspace that helps judicial professionals navigate case files and draft grounded responses, designed to preserve the human circumstances behind each case
+* **who we are**: founder of a storytelling platform amplifying 50+ narratives from contributors across 7+ countries, featured in the sunday times
 
-a social discovery platform that turns fragmented, scattered reviews of supplements, functional foods, and wellness products into structured, personal recommendations.
+### what i care about
 
-- designed a postgres schema where every product variant — down to individual flavors — is scored independently, with supabase auth and row-level security enforcing per-user access
-- built a multi-dimensional rating system (taste, effectiveness, ingredient quality, value) and a social graph that surfaces friends' ratings first
-- developed catalog search, filtering, and ranked-list discovery with a react/typescript frontend
+* search, retrieval, and recommendation systems
+* ai products that turn technical complexity into intuitive experiences
+* human-centered ai, and technology that serves overlooked communities
+* taking ideas from zero to one
 
-[explore the live app →](https://www.getstackd.app/)
+### right now
 
-## other work
+* cs106b section leader
+* going deeper on search and information retrieval through the information track
 
-- **[somnivore validation](https://github.com/sathmil/somnivore-validation)** (heller laboratory) — validation analysis comparing automated sleep-stage scoring against expert annotation across 2M+ epochs; surfaced a state-dependent accuracy collapse (77% → 19% rem-stage accuracy under the highest apamin dose) masked by a 93.7% aggregate classifier accuracy, using cohen's kappa and per-stage sensitivity/specificity
-- **veris** (dpl holdings) — an ai-powered workspace helping judicial professionals navigate case files and draft grounded responses, built on fastapi, qdrant hybrid search, azure openai, and a next.js frontend, designed around preserving the context and human circumstances behind each case
-- **who we are** — founder of a storytelling platform amplifying 50+ narratives from contributors across 7+ countries, featured in the sunday times
+### about how i work
 
-## the thread connecting my work
+i'm a fast learner who loves unfamiliar problems and thrives in high-ownership, fast-moving environments. when i take something on, i'm relentless about figuring it out. i'm always excited to roll up my sleeves, contribute wherever i'm needed, and help build something ambitious from the ground up.
 
-my projects span different domains, but they're grounded in the same purpose: building the infrastructure — indexes, schemas, ranking, retrieval — that lets people navigate information that's technically available but practically overwhelming.
-
-i'm especially interested in:
-
-- semantic search, retrieval, and recommendation systems
-- human-centered ai and intelligent interfaces
-- computational approaches to stories and human experience
-- products that translate complex systems into meaningful decisions
-
-## connect
-
+### connect
+<!-- add linkedin / email / portfolio (sathmi.vercel.app) here -->
 [linkedin](https://linkedin.com/in/sathmi) · [sathmi@stanford.edu](mailto:sathmi@stanford.edu)
