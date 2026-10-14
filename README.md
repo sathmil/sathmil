@@ -1,47 +1,48 @@
 hi, i'm sathmi 👋
 
-i'm a computer science student at stanford (information track) who loves building ai-powered products that make complex, overwhelming information feel navigable — search, retrieval, recommendation, and the interfaces people actually use to make decisions.
+i'm a pre-med student at stanford studying computer science and computational biology. i'm drawn to clinical machine learning: making sense of body data (sleep, physiology, wearables) and building models that clinicians can actually trust.
 
-before i wrote software, i was a storyteller. i founded who we are to amplify underrepresented voices and did anthropological research on identity, culture, and resilience. that background still shapes how i build: i care about representation, and about systems that serve the people who usually get overlooked.
+before i wrote software, i was a storyteller and a researcher. i founded who we are to amplify underrepresented voices, and i measured and interviewed Indigenous communities in sri lanka for anthropological research. that work showed me how easily data leaves people out: a dataset that doesn't represent a population can't serve it. that idea still shapes how i build.
 
-the question i keep coming back to:
-**how do you surface signal from noise without losing the people and stories behind the data?**
+the question i keep coming back to: **how do you know a model works for *every* patient, not just on average?**
 
-### featured projects
+### featured work
+
+**[somnivore validation](https://github.com/sathmil/somnivore-validation)** · heller laboratory, stanford
+i validated an ml sleep-stage classifier on eeg/emg recordings against expert annotation across 2m+ epochs from 47 recordings. overall it looked great: 93.7% agreement, cohen's κ = 0.88. but per-stage sensitivity/specificity, mixed-effects models and time-binned analyses showed a state-dependent collapse, with rem accuracy falling from 77% to 19% at the highest apamin dose. the aggregate score had hidden it. this project is why i care about evaluation.
 
 **[stackd](https://github.com/sathmil/stackd)** · [live app →](https://www.getstackd.app/)
-a social discovery platform that turns scattered reviews of supplements, functional foods, and wellness products into structured, personal recommendations. i built it solo, from zero to one, after one too many minutes standing in the supplement aisle unsure what to buy.
-
-* designed a postgres schema where every product variant, down to individual flavors, is scored independently, with supabase auth and row-level security for per-user access
-* built a multi-dimensional rating system (taste, effectiveness, ingredient quality, value) and a social graph that surfaces friends' ratings first
-* built an ingredient-analysis pipeline with the openai api to score product variants across brands
-* developed catalog search, filtering, and ranked-list discovery with a react/typescript frontend
-
-**[tried & told](https://github.com/sathmil/tried-told)** · *in progress*
-a learning project where i'm working through how search engines work under the hood: indexing, ranking, and hybrid retrieval (bm25 + dense embeddings) over first-person product reviews. i'm building it piece by piece to understand the tradeoffs, not just call a library.
+a social discovery platform that turns scattered reviews of supplements, functional foods and wellness products into structured, personal recommendations. i built it solo, from zero to one.
+* postgres schema that scores every product variant independently, with supabase auth and row-level security
+* multi-dimensional ratings (taste, effectiveness, ingredient quality, value) and a social graph that shows friends' ratings first
+* ingredient-analysis pipeline with the openai api, scoring 432 product variants across brands
 
 ### other work
 
-* **[somnivore validation](https://github.com/sathmil/somnivore-validation)** (heller laboratory): compared automated sleep-stage scoring against expert annotation across 2m+ epochs and found a state-dependent accuracy collapse (77% → 19% rem-stage accuracy at the highest apamin dose) hidden behind a 93.7% aggregate accuracy, using cohen's kappa and per-stage sensitivity/specificity
-* **veris** (dpl holdings): an ai-powered workspace that helps judicial professionals navigate case files and draft grounded responses, designed to preserve the human circumstances behind each case
-* **who we are**: founder of a storytelling platform amplifying 50+ narratives from contributors across 7+ countries, featured in the sunday times
+* **veris** (dpl holdings): backend for an ai-powered workspace that helps judicial professionals work through case files and draft grounded responses. it's decision support in a high-stakes domain where the humans stay in charge.
+* **kidney disease research** (stanford, center for tubulointerstitial kidney disease): research proposals and public-health outreach on ckdu.
+* **craniofacial morphometrics** (university of kelaniya): built an original dataset from sri lanka's Indigenous communities. first-author paper in the *international journal of morphology*.
+* **[tried & told](https://github.com/sathmil/tried-told)**: a learning project for understanding hybrid retrieval (bm25 + dense embeddings) piece by piece.
+* **who we are**: founder of a storytelling platform with 50+ narratives from contributors in 7+ countries, featured in the sunday times.
 
 ### what i care about
 
-* search, retrieval, and recommendation systems
-* ai products that turn technical complexity into intuitive experiences
-* human-centered ai, and technology that serves overlooked communities
-* taking ideas from zero to one
+* clinical ml and prediction, especially from physiological and wearable data
+* model validation, evaluation and fairness: catching failures that averages hide
+* llm agents and clinical decision support
+* responsible ai deployment and the infrastructure that makes it work in practice
+* multimodal ai for health
+* sleep, nutrition and human performance
 
 ### right now
 
 * cs106b section leader
-* going deeper on search and information retrieval through the information track
+* going deeper on clinical ml and model evaluation
 
 ### about how i work
 
-i'm a fast learner who loves unfamiliar problems and thrives in high-ownership, fast-moving environments. when i take something on, i'm relentless about figuring it out. i'm always excited to roll up my sleeves, contribute wherever i'm needed, and help build something ambitious from the ground up.
+i learn fast, i love unfamiliar problems, and i do well with high ownership. when i take something on, i keep going until i've figured it out, and i'm happy to contribute wherever i'm needed.
 
 ### connect
-<!-- add linkedin / email / portfolio (sathmi.vercel.app) here -->
+
 [linkedin](https://linkedin.com/in/sathmi) · [sathmi@stanford.edu](mailto:sathmi@stanford.edu)
