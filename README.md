@@ -1,6 +1,6 @@
 hi, i'm sathmi 👋
 
-i'm a pre-med student at stanford studying computer science and computational biology. i'm drawn to clinical machine learning: making sense of body data (sleep, physiology, wearables) and building models that clinicians can actually trust.
+i'm a pre-med student at stanford studying computer science. i'm drawn to clinical machine learning: making sense of body data (sleep, physiology, wearables) and building models that clinicians can actually trust.
 
 before i wrote software, i was a storyteller and a researcher. i founded who we are to amplify underrepresented voices, and i measured and interviewed Indigenous communities in sri lanka for anthropological research. that work showed me how easily data leaves people out: a dataset that doesn't represent a population can't serve it. that idea still shapes how i build.
 
